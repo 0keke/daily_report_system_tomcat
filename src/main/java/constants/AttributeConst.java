@@ -24,7 +24,7 @@ public enum AttributeConst {
 	LOGIN_ERR("loginError"),
 
 	// 従業員管理
-	EMPLOYEE("employee"), EMPLOYEES("employees"), EMP_COUNT("cmployees_count"), EMP_ID("id"), EMP_CODE(
+	EMPLOYEE("employee"), EMPLOYEES("employees"), EMP_COUNT("employees_count"), EMP_ID("id"), EMP_CODE(
 			"code"), EMP_PASS("password"), EMP_NAME("name"), EMP_ADMIN_FLG("admin_flag"),
 
 	// 管理者フラグ
