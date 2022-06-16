@@ -11,7 +11,7 @@
 <c:import url="../layout/app.jsp">
 	<c:param name="content">
 		<c:if test="${flush != null}">
-			<div id="flush_succeess">
+			<div id="flush_success">
 				<c:out value="${flush}"></c:out>
 			</div>
 		</c:if>

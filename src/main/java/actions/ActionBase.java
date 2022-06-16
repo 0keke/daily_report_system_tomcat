@@ -114,6 +114,28 @@ public abstract class ActionBase {
 	}
 	
 	/**
+	 * CSR対策 token不正の場合はエラー画面を表示
+	 * @return true: tokken有効 false: token不正
+	 * @throws ServletException
+	 * @throws IOException
+	 */
+	protected boolean checkToken() throws ServletException, IOException {
+		
+		// パラメータからtokenの値を取得
+		String _token = getRequestParam(AttributeConst.TOKEN);
+		
+		if (_token == null || !(_token.equals(getTokenId()))) {
+			
+			// tokenが設定されていない、またはセッションIDと一致しない場合はエラー画面を表示
+			forward(ForwardConst.FW_ERR_UNKNOWN);
+			
+			return false;
+		} else {
+			return true;
+		}
+	}
+	
+	/**
 	 * セッションIDを取得する
 	 * @return セッションID
 	 */
