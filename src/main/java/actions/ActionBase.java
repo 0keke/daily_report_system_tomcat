@@ -73,7 +73,7 @@ public abstract class ActionBase {
 			// 発生した例外をコンソールに表示
 			e.printStackTrace();
 			
-			// commandの値が不正で実行d系内場合、エラー画面を呼び出し
+			// commandの値が不正で実行できない場合、エラー画面を呼び出し
 			forward(ForwardConst.FW_ERR_UNKNOWN);
 		}
 	}
