@@ -20,6 +20,11 @@
 				</tr>
 				
 				<tr>
+                    <th>氏名</th>
+                    <td><c:out value="${employee.name}" /></td>
+                </tr>
+                
+				<tr>
 					<th>権限</th>
 					<td><c:choose>
 						<c:when test="${employee.adminFlag == AttributeConst.ROLE_ADMIN.getIntegerValue()}">管理者</c:when>
