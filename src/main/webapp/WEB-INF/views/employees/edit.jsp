@@ -7,7 +7,7 @@
 <c:set var="action" value="${ForwardConst.ACT_EMP.getValue()}" />
 <c:set var="commIdx" value="${ForwardConst.CMD_INDEX.getValue()}" />
 <c:set var="commUpd" value="${ForwardConst.CMD_UPDATE.getValue()}"/>
-<c:set var="cmmDel" value="${ForwardConst.CMD_DESTROY.getValue()}"/>
+<c:set var="commDel" value="${ForwardConst.CMD_DESTROY.getValue()}"/>
 
 <c:import url="../layout/app.jsp">
 	<c:param name="content">
@@ -30,7 +30,7 @@
 		<script>
 			function confirmDestroy() {
 				if (confirm("本当に削除してよろしいですか？")) {
-					document.forms[1].submit()
+					document.forms[1].submit();
 				}
 			}
 		</script>
